@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELORIA · Édition limitée</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR ELORIA -->
+  <header class="header">
+    <div class="header__container container">
+      <a href="/" class="header__logo">ELORIA</a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#hero" class="header__link">Accueil</a></li>
+          <li><a href="#community" class="header__link">Communauté</a></li>
+          <li><a href="#articles" class="header__link">Articles</a></li>
+          <li><a href="#gallery" class="header__link">Galeries</a></li>
+          <li><a href="#footer" class="header__link">À propos</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Hamburger Mobile -->
+      <button class="header__hamburger" aria-label="Menu">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu (overlay) -->
+    <div class="header__mobile-menu">
+      <div class="mobile-menu__inner">
+        <ul class="mobile-menu__list">
+          <li><a href="#hero" class="mobile-menu__link">Accueil</a></li>
+          <li><a href="#community" class="mobile-menu__link">Communauté</a></li>
+          <li><a href="#articles" class="mobile-menu__link">Articles</a></li>
+          <li><a href="#gallery" class="mobile-menu__link">Galeries</a></li>
+          <li><a href="#footer" class="mobile-menu__link">À propos</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION PLEINE ÉCRAN AVEC IMAGE -->
+    <section id="hero" class="hero">
+      <div class="hero__image-wrapper">
+        <img src="hero.jpg" 
+             alt="Élégance féminine" 
+             class="hero__image">
+        <div class="hero__overlay"></div>
+      </div>
+      
+      <div class="hero__content container">
+        <span class="hero__pre-title">ELORIA</span>
+        <h1 class="hero__title">
+          <span class="hero__title-line">L'instant</span>
+          <span class="hero__title-line">suspendu</span>
+        </h1>
+        <p class="hero__description">
+          Chaque regard, une histoire. Chaque geste, une signature.
+        </p>
+        <div class="hero__buttons">
+          <a href="#community" class="btn btn--primary">Découvrir</a>
+        </div>
+      </div>
+      
+      <!-- Élément décoratif -->
+      <div class="hero__scroll">
+        <span>Défiler</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+    <!-- ===== SECTION CARROUSEL COMMUNAUTÉ ===== -->
+<section id="community" class="carousel-section">
+  <div class="container">
+    <div class="carousel__header">
+      <span class="carousel__pre-title">Notre communauté</span>
+      <h2 class="carousel__title">Elles portent ELORIA</h2>
+      <p class="carousel__description">
+        Chaque visage raconte une interprétation unique de l'élégance.
+      </p>
+    </div>
+  </div>
+  
+
+<!-- ===== SECTION 2 : NOTRE COMMUNAUTÉ (CARROUSEL AESTHETIC) ===== -->
+<section id="community" class="section-community">
+  <div class="container">
+    <!-- label aesthetic girl — dans l'esprit de votre design -->
+    <div class="section__label">
+      <i class="fas fa-star"></i>
+      <span>NOTRE COMMUNAUTÉ</span>
+      <i class="fas fa-star"></i>
+    </div>
+    
+    <h2 class="section__title">Elles portent ELORIA</h2>
+    <p class="section__subtitle">Chaque jour, des instants suspendus.</p>
+    
+    <!-- VOTRE CARROUSEL INTÉGRÉ -->
+    <div class="carousel-container">
+      <button class="nav-arrow left" id="communityPrev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="nav-arrow right" id="communityNext">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="carousel-track" id="communityTrack">
+        <div class="carousel-slide">
+          <img src="image1.jpg" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+          <img src="image2.jpg" alt="sunset aesthetic" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+          <img src="image3.jpg" alt="flowers vintage" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+          <img src="image4.jpg" alt="coffee aesthetic" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+          <img src="image5.jpg" alt="beach aesthetic" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+          <img src="image6.jpg" alt="paris aesthetic" loading="lazy">
+        </div>
+      </div>
+
+      <div class="dots-navigation" id="communityDots">
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
+    </div>
+    
+    <!-- swipe hint discret -->
+    <div class="swipe-hint">
+      <i class="fas fa-chevron-left"></i> GLISSER <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
+</section>
+<!-- ===== SECTION 3 : ARTICLES ÉDITORIAUX ===== -->
+<section id="articles" class="section-articles">
+  <div class="container">
+    <!-- Label aesthetic -->
+    <div class="section__label">
+      <i class="fas fa-circle"></i>
+      <span>ÉDITORIAL</span>
+      <i class="fas fa-circle"></i>
+    </div>
+    
+    <h2 class="section__title">L'art de prendre son temps</h2>
+    <p class="section__subtitle">Réflexions, inspirations, carnets d'adresses.</p>
+    
+    <!-- Grille d'articles -->
+    <div class="articles-grid">
+      
+<!-- ARTICLE 1 : Se détacher du regard des autres -->
+<article class="article-card">
+  <div class="article-card__image-wrapper">
+    <img src="article1.jpg" 
+         alt="Femme qui marche seule, lumière dorée - liberté intérieure" 
+         class="article-card__image"
+         loading="lazy">
+    <span class="article-card__category">Mindset</span>
+  </div>
+  <div class="article-card__content">
+    <h3 class="article-card__title">
+      Se détacher du regard des autres
+    </h3>
+    <p class="article-card__description">
+      Pendant longtemps, on apprend à se définir à travers les autres. 
+      Mais grandir, c'est comprendre que leur regard ne définit pas ta valeur. 
+      Un article sur la liberté intérieure.
+    </p>
+    <button class="article-card__btn" data-article="1">
+      <span>Lire</span>
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </div>
+</article>
+
+      
+<!-- ARTICLE 2 : STOP AUX MONTAGNES RUSSES ÉMOTIONNELLES -->
+<article class="article-card">
+  <div class="article-card__image-wrapper">
+    <img src="article2.jpg" 
+         alt="Personne seule dans un paysage brumeux - montagnes russes émotionnelles" 
+         class="article-card__image"
+         loading="lazy">
+    <span class="article-card__category">Relation</span>
+  </div>
+  <div class="article-card__content">
+    <h3 class="article-card__title">
+      Stop aux montagnes russes émotionnelles
+    </h3>
+    <p class="article-card__description">
+      Anxieux·se, évitant·e, sécure — ces styles d'attachement que tu n'as pas choisis 
+      mais qui dirigent ta vie amoureuse. Et si tu pouvais descendre du manège ?
+    </p>
+    <button class="article-card__btn" data-article="2">
+      <span>Lire</span>
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </div>
+</article>
+      
+      
+      
+    </div> <!-- fin grille -->
+  </div> <!-- fin container -->
+</section>
+
+<!-- ===== MODALS (ONGLETS CACHÉS) ===== -->
+<div class="article-modals">
+  
+<!-- MODAL ARTICLE 1 : Se détacher du regard des autres -->
+<div id="article-1" class="article-modal">
+  <div class="article-modal__overlay"></div>
+  <div class="article-modal__container">
+    <div class="article-modal__content">
+      
+      <!-- Bouton retour -->
+      <button class="article-modal__close">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+      </button>
+      
+      <!-- En-tête de l'article -->
+      <div class="article-modal__header">
+        <span class="article-modal__category">
+          <i class="fas fa-star" style="font-size: 8px; margin-right: 6px; color: #e2b6b1;"></i>
+          MINDSET — 5 MIN
+          <i class="fas fa-star" style="font-size: 8px; margin-left: 6px; color: #e2b6b1;"></i>
+        </span>
+        <h2 class="article-modal__title">
+          Se détacher du regard des autres
+          <span style="display: block; font-size: 2rem; margin-top: 8px; color: #d4b2a7;">retrouver sa liberté intérieure</span>
+        </h2>
+        <p class="article-modal__excerpt">
+          Pendant longtemps, on apprend à se définir à travers les autres. 
+          Leurs avis. Leurs attentes. Leurs réactions. 
+          Mais grandir, c'est comprendre une chose essentielle : 
+          le regard des autres ne définit pas ta valeur.
+        </p>
+      </div>
+      
+      <!-- Corps de l'article -->
+      <div class="article-modal__body">
+        
+        <!-- Image d'illustration -->
+        <img src="article1.jpg" 
+             alt="Femme qui marche seule, lumière dorée" 
+             class="article-modal__hero"
+             loading="lazy">
+        
+        <!-- Contenu texte intégral -->
+        <div class="article-modal__text">
+          
+          <!-- Chapitre 1 : Pourquoi le regard des autres pèse autant -->
+          <h3 class="article-modal__text-chapter">Pourquoi le regard des autres pèse autant</h3>
+          <p>Le besoin d'appartenance est naturel. Nous voulons être aimés, reconnus, respectés.</p>
+          <p>Le problème commence lorsque ce besoin devient une dépendance. Quand tu n'oses plus être toi-même par peur du jugement. Quand tu doutes de ce que tu ressens parce que quelqu'un ne comprend pas. Quand tu vis pour être approuvé·e plutôt que pour être aligné·e.</p>
+          <p class="article-modal__text-highlight">À ce moment-là, tu t'éloignes doucement de toi.</p>
+          
+          <!-- Chapitre 2 : Le regard des autres est limité -->
+          <h3 class="article-modal__text-chapter">Le regard des autres est limité</h3>
+          <p>Chaque personne te perçoit à travers :</p>
+          <ul class="article-modal__text-list">
+            <li>sa propre histoire</li>
+            <li>ses blessures</li>
+            <li>ses croyances</li>
+            <li>ses peurs</li>
+          </ul>
+          <p>Autrement dit, les autres ne te voient jamais entièrement. Ils voient une version filtrée de toi.</p>
+          <p class="article-modal__text-emphasis">Fonder ta valeur sur quelque chose d'aussi subjectif, c'est te placer dans une instabilité permanente.</p>
+          
+          <!-- Chapitre 3 : Se détacher ne veut pas dire devenir froid·e -->
+          <h3 class="article-modal__text-chapter">Se détacher ne veut pas dire devenir froid·e</h3>
+          <p>Se détacher du regard des autres, ce n'est pas ignorer tout le monde. Ce n'est pas devenir insensible.</p>
+          <p>C'est apprendre à faire la différence entre :</p>
+          <ul class="article-modal__text-list">
+            <li>les avis qui construisent</li>
+            <li>et ceux qui projettent</li>
+          </ul>
+          <p class="article-modal__text-signature">C'est écouter sans absorber. Recevoir sans se perdre.</p>
+          
+          <!-- Chapitre 4 : Revenir à soi -->
+          <h3 class="article-modal__text-chapter">Revenir à soi</h3>
+          <p>Le vrai tournant commence quand tu te poses ces questions :</p>
+          <ul class="article-modal__text-list article-modal__text-list--spaced">
+            <li><span class="article-modal__text-question">Est-ce que ce choix me ressemble ?</span></li>
+            <li><span class="article-modal__text-question">Est-ce que je le fais par envie ou par peur ?</span></li>
+            <li><span class="article-modal__text-question">Est-ce que je me respecte dans cette situation ?</span></li>
+          </ul>
+          <p>Plus tu t'écoutes, moins le bruit extérieur a de pouvoir sur toi.</p>
+          
+          <!-- Chapitre 5 : Le courage d'être soi -->
+          <h3 class="article-modal__text-chapter">Le courage d'être soi</h3>
+          <p>Il faut du courage pour être authentique. Pour déplaire parfois. Pour être incompris·e.</p>
+          <p class="article-modal__text-contrast">Mais il faut encore plus de courage pour continuer à vivre une vie qui n'est pas la tienne.</p>
+          <p>Quand tu choisis d'être toi, certaines personnes s'éloignent. D'autres arrivent. Et surtout, tu te retrouves.</p>
+          
+          <!-- Chapitre 6 : ELORIA et la liberté intérieure -->
+          <div class="article-modal__text-eloria">
+            <h3 class="article-modal__text-chapter">ELORIA et la liberté intérieure</h3>
+            <p>Chez ELORIA, nous croyons que le glow up le plus profond est invisible.</p>
+            <p>C'est celui qui te permet de :</p>
+            <ul class="article-modal__text-list">
+              <li>marcher sans peur</li>
+              <li>t'exprimer</li>
+              <li>exister </li>
+            </ul>
+            <p class="article-modal__text-claim">Se détacher du regard des autres, c'est s'offrir une liberté intérieure.</p>
+          </div>
+          
+          <!-- Conclusion -->
+          <div class="article-modal__text-conclusion">
+            <h3 class="article-modal__text-chapter">Grandir, pour soi</h3>
+            <p>Tu n'as pas besoin d'être compris·e par tout le monde. Tu as besoin d'être en paix avec toi-même.</p>
+            <p class="article-modal__text-final">✨ Quand tu choisis ton regard plutôt que celui des autres, tu commences vraiment à évoluer.</p>
+          </div>
+          
+        </div> <!-- fin article-modal__text -->
+      </div> <!-- fin article-modal__body -->
+    </div> <!-- fin article-modal__content -->
+  </div> <!-- fin article-modal__container -->
+</div> <!-- fin modal -->
+  
+<!-- MODAL ARTICLE 2 : STOP AUX MONTAGNES RUSSES ÉMOTIONNELLES -->
+<div id="article-2" class="article-modal">
+  <div class="article-modal__overlay"></div>
+  <div class="article-modal__container">
+    <div class="article-modal__content">
+      
+      <!-- Bouton retour -->
+      <button class="article-modal__close">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour</span>
+      </button>
+      
+      <!-- En-tête de l'article -->
+      <div class="article-modal__header">
+        <span class="article-modal__category">
+          <i class="fas fa-star" style="font-size: 8px; margin-right: 6px; color: #e2b6b1;"></i>
+          RELATION — 6 MIN
+          <i class="fas fa-star" style="font-size: 8px; margin-left: 6px; color: #e2b6b1;"></i>
+        </span>
+        <h2 class="article-modal__title">
+          Stop aux montagnes russes émotionnelles
+          <span style="display: block; font-size: 1.8rem; margin-top: 12px; color: #d4b2a7;">reconnaître son style d'attachement pour aimer plus sereinement</span>
+        </h2>
+      </div>
+      
+      <!-- Corps de l'article -->
+      <div class="article-modal__body">
+        
+        <!-- Image d'illustration -->
+        <img src="article2.jpg" 
+             alt="Personne seule dans un paysage brumeux - introspection" 
+             class="article-modal__hero"
+             loading="lazy">
+        
+        <!-- Contenu texte intégral -->
+        <div class="article-modal__text">
+          
+          <!-- Accroche -->
+          <p class="article-modal__text-highlight" style="margin-top: 0;">
+            Tu connais ce moment où tout va bien — et soudain, plus rien.
+          </p>
+          
+          <p>Un message laissé sans réponse. Un ton qui change. Une absence.</p>
+          <p>Et toi, tu décolles.</p>
+          
+          <p>Tu relis. Tu analyses. Tu te demandes ce que tu as fait.<br>
+          Ou à l'inverse : tu sens l'autre qui s'accroche, qui veut des garanties, qui a besoin d'être rassuré·e toutes les heures — et ça t'étouffe.</p>
+          
+          <p class="article-modal__text-emphasis">Dans les deux cas, c'est la même chose :<br>
+          <strong>Ce ne sont pas les sentiments qui dysfonctionnent. C'est le logiciel.</strong></p>
+          
+          <!-- Partie 1 : Anxieux·se -->
+          <h3 class="article-modal__text-chapter">🔹 Anxieux·se : celle ou celui qui aime comme il respire</h3>
+          <p>Tu as besoin de preuves. Pas par caprice. Par survie.</p>
+          <p>Quand on t'aime moins, tu crois que tu vaux moins.<br>
+          Quand on s'éloigne, tu cours plus vite.<br>
+          Quand ça devient flou, tu deviens détective : <em>il était en ligne il y a deux minutes, pourquoi il ne répond pas ?</em></p>
+          <p>Tu donnes tout, parfois trop. Tu t'oublies dans l'autre.</p>
+          <p class="article-modal__text-signature">Et tu sais quoi ? Ce n'est pas de l'amour excessif.<br>
+          <strong>C'est de la peur déguisée.</strong></p>
+          
+          <!-- Partie 2 : Évitant·e -->
+          <h3 class="article-modal__text-chapter">🔹 Évitant·e : celui ou celle qui garde toujours une porte de sortie</h3>
+          <p>Toi, tu aimes. Vraiment.</p>
+          <p>Mais dès que ça devient trop proche, trop intense, trop "nous" — tu ressens comme une oppression.<br>
+          Alors tu prends de la distance. Sans vraiment expliquer. Parce que toi-même, tu ne sais pas pourquoi.</p>
+          <p>On te dit "froid·e", "indépendant·e", "jamais satisfait·e".</p>
+          <p class="article-modal__text-signature">La vérité ? <strong>Tu as juste appris très tôt qu'il ne fallait compter que sur toi-même.</strong><br>
+          Alors tu restes, mais avec un pied dehors. Au cas où.</p>
+          
+          <!-- Partie 3 : Sécure -->
+          <h3 class="article-modal__text-chapter">🔹 Sécure : celui ou celle qui ne lit pas entre les lignes</h3>
+          <p>Toi, quand quelqu'un ne répond pas, tu penses "il est occupé".<br>
+          Quand il y a un désaccord, tu penses "on va en parler".<br>
+          Quand on t'aime, tu le crois.</p>
+          <p>Tu n'es ni dans le contrôle, ni dans la fuite.<br>
+          Tu es juste... là.</p>
+          <p class="article-modal__text-claim" style="font-size: 1.2rem; text-align: left; background: none; padding: 0; margin: 24px 0;">
+            <strong>Tu es la destination. Pas l'escale.</strong>
+          </p>
+          
+          <!-- Partie 4 : Réparer -->
+          <h3 class="article-modal__text-chapter">🕊️ Comment descendre des montagnes russes</h3>
+          
+          <p style="font-weight: 500; color: #7a5e58; margin-top: 32px;">Si tu es anxieux·se :</p>
+          <p>Apprends à rester même quand ça tremble.</p>
+          <p>Quand l'angoisse monte, ne texte pas. Attends une heure. Dors dessus. Demande-toi :<br>
+          <em>"Est-ce que c'est un fait, ou une interprétation ?"</em></p>
+          <p>La personne que tu aimes n'est pas responsable de tes blessures passées.<br>
+          Mais toi, tu peux choisir de ne pas les lui coller sur le dos.</p>
+          <p class="article-modal__text-question" style="padding-left: 24px; border-left: 3px solid #e2c1bc;">
+            <strong>👉 Ton objectif :</strong> devenir une personne que tu ne quitterais pas.
+          </p>
+          
+          <p style="font-weight: 500; color: #7a5e58; margin-top: 32px;">Si tu es évitant·e :</p>
+          <p>Apprends à rester même quand ça serre.</p>
+          <p>Quand tu sens l'envie de fuir, reste cinq minutes de plus. Dis ce que tu ressens, même maladroitement. Même incomplètement.</p>
+          <p>La proximité n'est pas un piège.<br>
+          L'autre ne veut pas t'enfermer. Il veut juste exister à côté de toi.</p>
+          <p class="article-modal__text-question" style="padding-left: 24px; border-left: 3px solid #e2c1bc;">
+            <strong>👉 Ton objectif :</strong> accepter qu'être dépendant, un tout petit peu, ce n'est pas mourir.
+          </p>
+          
+          <p style="font-weight: 500; color: #7a5e58; margin-top: 32px;">Si tu es sécure :</p>
+          <p>Continue. Et tends la main.</p>
+          <p>Tu n'as pas à sauver personne. Mais ta stabilité peut être un refuge pour ceux qui n'en ont jamais eu.</p>
+          <p class="article-modal__text-question" style="padding-left: 24px; border-left: 3px solid #e2c1bc;">
+            <strong>👉 Ton objectif :</strong> rester là, sans t'épuiser.
+          </p>
+          
+          <!-- Conclusion ELORIA -->
+          <div class="article-modal__text-eloria">
+            <h3 class="article-modal__text-chapter" style="margin-top: 0;">✨ Ce qu'on retient</h3>
+            <p>On ne change pas de style d'attachement comme on change de coiffure.</p>
+            <p>Ça prend du temps. Des répétitions. Des retours en arrière.</p>
+            <p class="article-modal__text-claim" style="font-size: 1.2rem;">
+              Mais voici ce qui est vrai :<br>
+              <strong>Tu n'es pas condamné·e à répéter.</strong>
+            </p>
+            <p>Tu peux, pour la première fois :</p>
+            <ul class="article-modal__text-list">
+              <li>Ne pas courir après quelqu'un qui s'éloigne</li>
+              <li>Ne pas t'enfuir quand quelqu'un s'approche</li>
+              <li>Exister dans une relation sans disparaître</li>
+            </ul>
+            <p class="article-modal__text-signature" style="font-style: normal;">
+              <strong>Ce n'est pas de l'amour moins fort. C'est de l'amour plus doux.</strong>
+            </p>
+          </div>
+          
+          <!-- Signature ELORIA -->
+          <div class="article-modal__text-conclusion">
+            <p></p>
+            <p></p>
+            <p class="article-modal__text-final">
+              Anxieux, évitant, sécure — ce sont des stratégies que tu as développées pour survivre.<br>
+              Mais aujourd'hui, tu n'es plus en danger.<br>
+              <span style="font-size: 1.3rem; display: block; margin-top: 16px;">🕊️ <strong>Aujourd'hui, tu peux apprendre à rester.</strong></span>
+            </p>
+          </div>
+          
+        </div> <!-- fin article-modal__text -->
+      </div> <!-- fin article-modal__body -->
+    </div> <!-- fin article-modal__content -->
+  </div> <!-- fin article-modal__container -->
+</div> <!-- fin modal -->
+  
+
+
+<!-- ===== SECTION 4 : GALERIE INSTANTS ===== -->
+<section id="gallery" class="section-gallery">
+  <div class="container">
+    <!-- Label minimaliste - presque invisible -->
+    <div class="section__label">
+      <i class="fas fa-circle"></i>
+      <span>GALERIE</span>
+      <i class="fas fa-circle"></i>
+    </div>
+    
+    <h2 class="section__title">Instants suspendus</h2>
+    <p class="section__subtitle">Notre regard sur le monde.</p>
+    
+    <!-- CARROUSEL #2 - IDENTIQUE AU PREMIER -->
+    <div class="gallery-carousel-container">
+      <!-- Flèches -->
+      <button class="gallery-nav-arrow left" id="galleryPrev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="gallery-nav-arrow right" id="galleryNext">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Piste des slides - avec vos noms de fichiers -->
+      <div class="gallery-carousel-track" id="galleryTrack">
+        <div class="gallery-carousel-slide">
+          <img src="img1.jpg" alt="Instant ELORIA 1" loading="lazy">
+        </div>
+        <div class="gallery-carousel-slide">
+          <img src="img2.jpg" alt="Instant ELORIA 2" loading="lazy">
+        </div>
+        <div class="gallery-carousel-slide">
+          <img src="img3.jpg" alt="Instant ELORIA 3" loading="lazy">
+        </div>
+        <div class="gallery-carousel-slide">
+          <img src="img4.jpg" alt="Instant ELORIA 4" loading="lazy">
+        </div>
+        <div class="gallery-carousel-slide">
+          <img src="img5.jpg" alt="Instant ELORIA 5" loading="lazy">
+        </div>
+        <div class="gallery-carousel-slide">
+          <img src="img6.jpg" alt="Instant ELORIA 6" loading="lazy">
+        </div>
+        <div class="gallery-carousel-slide">
+          <img src="img7.jpg" alt="Instant ELORIA 7" loading="lazy">
+        </div>
+        <div class="gallery-carousel-slide">
+          <img src="img8.jpg" alt="Instant ELORIA 8" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Dots perles -->
+      <div class="gallery-dots-navigation" id="galleryDots">
+        <button class="gallery-dot active"></button>
+        <button class="gallery-dot"></button>
+        <button class="gallery-dot"></button>
+        <button class="gallery-dot"></button>
+        <button class="gallery-dot"></button>
+        <button class="gallery-dot"></button>
+        <button class="gallery-dot"></button>
+        <button class="gallery-dot"></button>
+      </div>
+    </div>
+    
+    <!-- Swipe hint - encore plus discret -->
+    <div class="gallery-swipe-hint">
+      <i class="fas fa-chevron-left"></i> GLISSER <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer" class="footer">
+  <div class="container">
+    
+    <!-- Ligne décorative fine -->
+    <div class="footer__divider"></div>
+    
+    <div class="footer__grid">
+      
+      <!-- COLONNE 1 : À PROPOS - L'HISTOIRE ANSIMA -->
+      <div class="footer__col">
+        <h4 class="footer__title">ELORIA</h4>
+        <div class="footer__about">
+          <p class="footer__about-text">
+            <span class="footer__about-signature">Ansima Babeho</span> a créé ELORIA pour offrir 
+            <span class="footer__about-highlight">un espace de développement personnel, de mindset et de relation</span>.
+          </p>
+          <p class="footer__about-text">
+            Nous organisons des ateliers dans le lycée, à notre école, 
+            en partenariat avec d'autres clubs. Chaque rencontre est une invitation 
+            à se révéler.
+          </p>
+          <p class="footer__about-text footer__about-text--small">
+            <i class="fas fa-heart" style="color: #e2b6b1; font-size: 9px;"></i> 
+            Communauté naissante, âme immense.
+          </p>
+        </div>
+      </div>
+      
+      <!-- COLONNE 2 : NAVIGATION RAPIDE -->
+      <div class="footer__col">
+        <h4 class="footer__title">Explorer</h4>
+        <ul class="footer__nav">
+          <li><a href="#hero" class="footer__link">Accueil</a></li>
+          <li><a href="#community" class="footer__link">Communauté</a></li>
+          <li><a href="#articles" class="footer__link">Articles</a></li>
+          <li><a href="#gallery" class="footer__link">Galeries</a></li>
+          <li><a href="#footer" class="footer__link">À propos</a></li>
+        </ul>
+      </div>
+      
+      <!-- COLONNE 3 : NOS RÉSEAUX & CONTACTS -->
+      <div class="footer__col">
+        <h4 class="footer__title">Se connecter</h4>
+        
+        <!-- Chaîne WhatsApp -->
+        <div class="footer__contact-item">
+          <div class="footer__contact-label">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chaîne ELORIA Club</span>
+          </div>
+          <a href="https://whatsapp.com/channel/0029Vb7QGs977qVS60e80K2w" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="footer__contact-link">
+             · Rejoindre
+          </a>
+          <span class="footer__contact-badge">nouvelle</span>
+        </div>
+        
+        <!-- Groupe privé WhatsApp -->
+        <div class="footer__contact-item">
+          <div class="footer__contact-label">
+            <i class="fab fa-whatsapp"></i>
+            <span>Groupe privé membres</span>
+          </div>
+          <div class="footer__contact-text">
+            Contactez-moi pour en faire partie
+          </div>
+          <a href="tel:+243853020512" class="footer__contact-phone">
+            +243 853 020 512
+          </a>
+        </div>
+        
+        <!-- Email -->
+        <div class="footer__contact-item">
+          <div class="footer__contact-label">
+            <i class="far fa-envelope"></i>
+            <span>Gmail</span>
+          </div>
+          <a href="mailto:babehoansima@gmail.com" class="footer__contact-email">
+            babehoansima@gmail.com
+          </a>
+        </div>
+        
+        <!-- Réseaux sociaux (discrets) -->
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      
+    </div> <!-- fin grid -->
+    
+    <!-- Copyright avec coeur -->
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        <i class="far fa-heart"></i> 
+        ELORIA · créé par Ansima Babeho 
+        <i class="far fa-heart"></i>
+      </p>
+      <p class="footer__micro">
+        Ensemble, construisons l'élégance intérieure.
+      </p>
+    </div>
+    
+  </div>
+</footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
